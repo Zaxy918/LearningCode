@@ -28,7 +28,7 @@ public class Chap8_1 {
     public static boolean isValid(String id) {
         if (id.length() != 18)
             return false;
-        for (int i = 0; i < 17; i++) {
+        for (int i = 0; i <= 17; i++) {
             if (i == 17) {
                 if (!(id.charAt(i) == 'x' || Character.isDigit(id.charAt(i))))
                     return false;
