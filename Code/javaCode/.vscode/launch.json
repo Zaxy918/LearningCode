@@ -1,0 +1,721 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ConstructorTest",
+            "request": "launch",
+            "mainClass": "ConstructorTest",
+            "projectName": "MOOC04-03"
+        },
+        {
+            "type": "java",
+            "name": "LifeCycleTest",
+            "request": "launch",
+            "mainClass": "LifeCycleTest",
+            "projectName": "MOOC04-03"
+        },
+        {
+            "type": "java",
+            "name": "InfoHidingTest",
+            "request": "launch",
+            "mainClass": "InfoHidingTest",
+            "projectName": "MOOC04-04"
+        },
+        {
+            "type": "java",
+            "name": "ThisTest",
+            "request": "launch",
+            "mainClass": "ThisTest",
+            "projectName": "MOOC04-04"
+        },
+        {
+            "type": "java",
+            "name": "B",
+            "request": "launch",
+            "mainClass": "B",
+            "projectName": "MOOC05-01"
+        },
+        {
+            "type": "java",
+            "name": "Derived",
+            "request": "launch",
+            "mainClass": "Derived",
+            "projectName": "MOOC05-01"
+        },
+        {
+            "type": "java",
+            "name": "Man",
+            "request": "launch",
+            "mainClass": "Man",
+            "projectName": "MOOC05-01"
+        },
+        {
+            "type": "java",
+            "name": "Son",
+            "request": "launch",
+            "mainClass": "Son",
+            "projectName": "MOOC05-01"
+        },
+        {
+            "type": "java",
+            "name": "Rectangle",
+            "request": "launch",
+            "mainClass": "Rectangle",
+            "projectName": "MOOC05-02"
+        },
+        {
+            "type": "java",
+            "name": "AnimalTest",
+            "request": "launch",
+            "mainClass": "AnimalTest",
+            "projectName": "MOOC05-03"
+        },
+        {
+            "type": "java",
+            "name": "Man(1)",
+            "request": "launch",
+            "mainClass": "Man",
+            "projectName": "MOOC05-03"
+        },
+        {
+            "type": "java",
+            "name": "Potato",
+            "request": "launch",
+            "mainClass": "Potato",
+            "projectName": "MOOC06-01"
+        },
+        {
+            "type": "java",
+            "name": "StaticBlockTest",
+            "request": "launch",
+            "mainClass": "StaticBlockTest",
+            "projectName": "MOOC06-01"
+        },
+        {
+            "type": "java",
+            "name": "StaticMethodTest",
+            "request": "launch",
+            "mainClass": "StaticMethodTest",
+            "projectName": "MOOC06-01"
+        },
+        {
+            "type": "java",
+            "name": "Singleton",
+            "request": "launch",
+            "mainClass": "Singleton",
+            "projectName": "MOOC06-02"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "MOOC06-02"
+        },
+        {
+            "type": "java",
+            "name": "FinalObjectTest",
+            "request": "launch",
+            "mainClass": "FinalObjectTest",
+            "projectName": "MOOC06-03"
+        },
+        {
+            "type": "java",
+            "name": "FinalPrimitiveType",
+            "request": "launch",
+            "mainClass": "FinalPrimitiveType",
+            "projectName": "MOOC06-03"
+        },
+        {
+            "type": "java",
+            "name": "B(1)",
+            "request": "launch",
+            "mainClass": "B",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "BoxClassTest",
+            "request": "launch",
+            "mainClass": "BoxClassTest",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "CacheTest",
+            "request": "launch",
+            "mainClass": "CacheTest",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "Cat",
+            "request": "launch",
+            "mainClass": "Cat",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "Constants",
+            "request": "launch",
+            "mainClass": "Constants",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "IntegerTest",
+            "request": "launch",
+            "mainClass": "IntegerTest",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "StringConstantTest",
+            "request": "launch",
+            "mainClass": "StringConstantTest",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "StringNewTest",
+            "request": "launch",
+            "mainClass": "StringNewTest",
+            "projectName": "MOOC06-04"
+        },
+        {
+            "type": "java",
+            "name": "ArgumentPassing",
+            "request": "launch",
+            "mainClass": "ArgumentPassing",
+            "projectName": "MOOC06-05"
+        },
+        {
+            "type": "java",
+            "name": "ImmutableObjectTest",
+            "request": "launch",
+            "mainClass": "ImmutableObjectTest",
+            "projectName": "MOOC06-05"
+        },
+        {
+            "type": "java",
+            "name": "ObjectPassingTest",
+            "request": "launch",
+            "mainClass": "ObjectPassingTest",
+            "projectName": "MOOC06-05"
+        },
+        {
+            "type": "java",
+            "name": "PrimitiveTypePassingTest",
+            "request": "launch",
+            "mainClass": "PrimitiveTypePassingTest",
+            "projectName": "MOOC06-05"
+        },
+        {
+            "type": "java",
+            "name": "StringAppendTest",
+            "request": "launch",
+            "mainClass": "StringAppendTest",
+            "projectName": "MOOC06-05"
+        },
+        {
+            "type": "java",
+            "name": "StringPassingTest",
+            "request": "launch",
+            "mainClass": "StringPassingTest",
+            "projectName": "MOOC06-05"
+        },
+        {
+            "type": "java",
+            "name": "Test(1)",
+            "request": "launch",
+            "mainClass": "c.Test",
+            "projectName": "MOOC07-01"
+        },
+        {
+            "type": "java",
+            "name": "PackageExampleTest",
+            "request": "launch",
+            "mainClass": "cn.edu.ecnu.PackageExampleTest",
+            "projectName": "MOOC07-01"
+        },
+        {
+            "type": "java",
+            "name": "NewExampleTest",
+            "request": "launch",
+            "mainClass": "net.abc.NewExampleTest",
+            "projectName": "MOOC07-01"
+        },
+        {
+            "type": "java",
+            "name": "PackageExampleTest(1)",
+            "request": "launch",
+            "mainClass": "PackageExampleTest",
+            "projectName": "MOOC07-02"
+        },
+        {
+            "type": "java",
+            "name": "C",
+            "request": "launch",
+            "mainClass": "A.B.C",
+            "projectName": "MOOC07-03"
+        },
+        {
+            "type": "java",
+            "name": "F",
+            "request": "launch",
+            "mainClass": "D.E.F",
+            "projectName": "MOOC07-03"
+        },
+        {
+            "type": "java",
+            "name": "H",
+            "request": "launch",
+            "mainClass": "G.H",
+            "projectName": "MOOC07-03"
+        },
+        {
+            "type": "java",
+            "name": "BigDecimalTest",
+            "request": "launch",
+            "mainClass": "BigDecimalTest",
+            "projectName": "MOOC08-02"
+        },
+        {
+            "type": "java",
+            "name": "BigIntegerTest",
+            "request": "launch",
+            "mainClass": "BigIntegerTest",
+            "projectName": "MOOC08-02"
+        },
+        {
+            "type": "java",
+            "name": "FloatingTest",
+            "request": "launch",
+            "mainClass": "FloatingTest",
+            "projectName": "MOOC08-02"
+        },
+        {
+            "type": "java",
+            "name": "IntegerTest(1)",
+            "request": "launch",
+            "mainClass": "IntegerTest",
+            "projectName": "MOOC08-02"
+        },
+        {
+            "type": "java",
+            "name": "MathTest",
+            "request": "launch",
+            "mainClass": "MathTest",
+            "projectName": "MOOC08-02"
+        },
+        {
+            "type": "java",
+            "name": "RandomTest",
+            "request": "launch",
+            "mainClass": "RandomTest",
+            "projectName": "MOOC08-02"
+        },
+        {
+            "type": "java",
+            "name": "StringAppendTest(1)",
+            "request": "launch",
+            "mainClass": "StringAppendTest",
+            "projectName": "MOOC08-03"
+        },
+        {
+            "type": "java",
+            "name": "StringBufferCapacityTest",
+            "request": "launch",
+            "mainClass": "StringBufferCapacityTest",
+            "projectName": "MOOC08-03"
+        },
+        {
+            "type": "java",
+            "name": "StringBufferReferenceTest",
+            "request": "launch",
+            "mainClass": "StringBufferReferenceTest",
+            "projectName": "MOOC08-03"
+        },
+        {
+            "type": "java",
+            "name": "StringTest",
+            "request": "launch",
+            "mainClass": "StringTest",
+            "projectName": "MOOC08-03"
+        },
+        {
+            "type": "java",
+            "name": "CalendarClassTest",
+            "request": "launch",
+            "mainClass": "CalendarClassTest",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "CalendarTest",
+            "request": "launch",
+            "mainClass": "CalendarTest",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "DateTest",
+            "request": "launch",
+            "mainClass": "DateTest",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "DateUtil",
+            "request": "launch",
+            "mainClass": "DateUtil",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "InstantExample",
+            "request": "launch",
+            "mainClass": "InstantExample",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "LocalDateExample",
+            "request": "launch",
+            "mainClass": "LocalDateExample",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "LocalDateTimeExample",
+            "request": "launch",
+            "mainClass": "LocalDateTimeExample",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "LocalTimeExample",
+            "request": "launch",
+            "mainClass": "LocalTimeExample",
+            "projectName": "MOOC08-04"
+        },
+        {
+            "type": "java",
+            "name": "DateFormatterTest",
+            "request": "launch",
+            "mainClass": "DateFormatterTest",
+            "projectName": "MOOC08-05"
+        },
+        {
+            "type": "java",
+            "name": "DecimalFormatTest",
+            "request": "launch",
+            "mainClass": "DecimalFormatTest",
+            "projectName": "MOOC08-05"
+        },
+        {
+            "type": "java",
+            "name": "DecimalFormaterRuleTest",
+            "request": "launch",
+            "mainClass": "DecimalFormaterRuleTest",
+            "projectName": "MOOC08-05"
+        },
+        {
+            "type": "java",
+            "name": "MessageFormatTest",
+            "request": "launch",
+            "mainClass": "MessageFormatTest",
+            "projectName": "MOOC08-05"
+        },
+        {
+            "type": "java",
+            "name": "SimpleDateTest",
+            "request": "launch",
+            "mainClass": "SimpleDateTest",
+            "projectName": "MOOC08-05"
+        },
+        {
+            "type": "java",
+            "name": "Test(2)",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "MOOC08-05"
+        },
+        {
+            "type": "java",
+            "name": "TwoDigitsTest",
+            "request": "launch",
+            "mainClass": "TwoDigitsTest",
+            "projectName": "MOOC08-05"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionDemo",
+            "request": "launch",
+            "mainClass": "ExceptionDemo",
+            "projectName": "MOOC09-01"
+        },
+        {
+            "type": "java",
+            "name": "MultipleCatchDemo",
+            "request": "launch",
+            "mainClass": "MultipleCatchDemo",
+            "projectName": "MOOC09-02"
+        },
+        {
+            "type": "java",
+            "name": "MyExceptionTest",
+            "request": "launch",
+            "mainClass": "MyExceptionTest",
+            "projectName": "MOOC09-02"
+        },
+        {
+            "type": "java",
+            "name": "ThrowsDemo",
+            "request": "launch",
+            "mainClass": "ThrowsDemo",
+            "projectName": "MOOC09-02"
+        },
+        {
+            "type": "java",
+            "name": "TryDemo",
+            "request": "launch",
+            "mainClass": "TryDemo",
+            "projectName": "MOOC09-02"
+        },
+        {
+            "type": "java",
+            "name": "MyExceptionTest(1)",
+            "request": "launch",
+            "mainClass": "MyExceptionTest",
+            "projectName": "MOOC09-03"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "MOOC09-03"
+        },
+        {
+            "type": "java",
+            "name": "ArrayTest",
+            "request": "launch",
+            "mainClass": "ArrayTest",
+            "projectName": "MOOC10-01"
+        },
+        {
+            "type": "java",
+            "name": "MultiDimArrayTest",
+            "request": "launch",
+            "mainClass": "MultiDimArrayTest",
+            "projectName": "MOOC10-01"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListTest",
+            "request": "launch",
+            "mainClass": "ArrayListTest",
+            "projectName": "MOOC10-03"
+        },
+        {
+            "type": "java",
+            "name": "LinkedListTest",
+            "request": "launch",
+            "mainClass": "LinkedListTest",
+            "projectName": "MOOC10-03"
+        },
+        {
+            "type": "java",
+            "name": "ListCompareTest",
+            "request": "launch",
+            "mainClass": "ListCompareTest",
+            "projectName": "MOOC10-03"
+        },
+        {
+            "type": "java",
+            "name": "VectorTest",
+            "request": "launch",
+            "mainClass": "VectorTest",
+            "projectName": "MOOC10-03"
+        },
+        {
+            "type": "java",
+            "name": "HashMapTest",
+            "request": "launch",
+            "mainClass": "HashMapTest",
+            "projectName": "MOOC10-05"
+        },
+        {
+            "type": "java",
+            "name": "HashtableTest",
+            "request": "launch",
+            "mainClass": "HashtableTest",
+            "projectName": "MOOC10-05"
+        },
+        {
+            "type": "java",
+            "name": "LinkedHashMapTest",
+            "request": "launch",
+            "mainClass": "LinkedHashMapTest",
+            "projectName": "MOOC10-05"
+        },
+        {
+            "type": "java",
+            "name": "MapCompareTest",
+            "request": "launch",
+            "mainClass": "MapCompareTest",
+            "projectName": "MOOC10-05"
+        },
+        {
+            "type": "java",
+            "name": "PropertiesTest",
+            "request": "launch",
+            "mainClass": "PropertiesTest",
+            "projectName": "MOOC10-05"
+        },
+        {
+            "type": "java",
+            "name": "TreeMapTest",
+            "request": "launch",
+            "mainClass": "TreeMapTest",
+            "projectName": "MOOC10-05"
+        },
+        {
+            "type": "java",
+            "name": "ArraysTest",
+            "request": "launch",
+            "mainClass": "ArraysTest",
+            "projectName": "MOOC10-06"
+        },
+        {
+            "type": "java",
+            "name": "CollectionsTest",
+            "request": "launch",
+            "mainClass": "CollectionsTest",
+            "projectName": "MOOC10-06"
+        },
+        {
+            "type": "java",
+            "name": "Person",
+            "request": "launch",
+            "mainClass": "Person",
+            "projectName": "MOOC10-06"
+        },
+        {
+            "type": "java",
+            "name": "Person2Comparator",
+            "request": "launch",
+            "mainClass": "Person2Comparator",
+            "projectName": "MOOC10-06"
+        },
+        {
+            "type": "java",
+            "name": "FileAttributeTest",
+            "request": "launch",
+            "mainClass": "FileAttributeTest",
+            "projectName": "MOOC11-01"
+        },
+        {
+            "type": "java",
+            "name": "FilesTest",
+            "request": "launch",
+            "mainClass": "FilesTest",
+            "projectName": "MOOC11-01"
+        },
+        {
+            "type": "java",
+            "name": "PathTest",
+            "request": "launch",
+            "mainClass": "PathTest",
+            "projectName": "MOOC11-01"
+        },
+        {
+            "type": "java",
+            "name": "SearchJPGFiles",
+            "request": "launch",
+            "mainClass": "SearchJPGFiles",
+            "projectName": "MOOC11-01"
+        },
+        {
+            "type": "java",
+            "name": "TxtFileRead",
+            "request": "launch",
+            "mainClass": "TxtFileRead",
+            "projectName": "MOOC11-03"
+        },
+        {
+            "type": "java",
+            "name": "TxtFileWrite",
+            "request": "launch",
+            "mainClass": "TxtFileWrite",
+            "projectName": "MOOC11-03"
+        },
+        {
+            "type": "java",
+            "name": "BinFileRead",
+            "request": "launch",
+            "mainClass": "BinFileRead",
+            "projectName": "MOOC11-04"
+        },
+        {
+            "type": "java",
+            "name": "BinFileWrite",
+            "request": "launch",
+            "mainClass": "BinFileWrite",
+            "projectName": "MOOC11-04"
+        },
+        {
+            "type": "java",
+            "name": "MultipleFileUnzip",
+            "request": "launch",
+            "mainClass": "MultipleFileUnzip",
+            "projectName": "MOOC11-05"
+        },
+        {
+            "type": "java",
+            "name": "MultipleFileZip",
+            "request": "launch",
+            "mainClass": "MultipleFileZip",
+            "projectName": "MOOC11-05"
+        },
+        {
+            "type": "java",
+            "name": "SingleFileUnzip",
+            "request": "launch",
+            "mainClass": "SingleFileUnzip",
+            "projectName": "MOOC11-05"
+        },
+        {
+            "type": "java",
+            "name": "SingleFileZip",
+            "request": "launch",
+            "mainClass": "SingleFileZip",
+            "projectName": "MOOC11-05"
+        },
+        {
+            "type": "java",
+            "name": "ComputerStore",
+            "request": "launch",
+            "mainClass": "com.coin.product.ComputerStore",
+            "projectName": "MOOC12-01"
+        },
+        {
+            "type": "java",
+            "name": "WordCounter",
+            "request": "launch",
+            "mainClass": "net.word.count.WordCounter",
+            "projectName": "MOOC12-01"
+        }
+    ]
+}
