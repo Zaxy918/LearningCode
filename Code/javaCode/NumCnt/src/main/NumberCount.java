@@ -48,8 +48,11 @@ public class NumberCount {
 
     public static void outPut(ArrayList<Num> nums) {
         System.out.println("The ranking of number occurrences is:");
+        int sum = 0;
         for (Num n : nums) {
             System.out.println("Number " + n.getNum() + " occurred " + n.getCount() + " times");
+            sum += n.getCount();
         }
+        System.out.println("Total occurrences: " + sum);
     }
 }

@@ -37,6 +37,7 @@ public class Searcher implements FileVisitor<Path> {
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
         System.out.println("Visiting file: " + file.toString());
+        judgeFile(file);  // 调用judgeFile方法来检查文件是否匹配模式
         return FileVisitResult.CONTINUE;
     }
 
