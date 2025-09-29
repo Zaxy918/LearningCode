@@ -6,6 +6,30 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Chap11",
+            "request": "launch",
+            "mainClass": "Chap11"
+        },
+        {
+            "type": "java",
+            "name": "FileExMatch",
+            "request": "launch",
+            "mainClass": "FileExMatch"
+        },
+        {
+            "type": "java",
+            "name": "FileTravel",
+            "request": "launch",
+            "mainClass": "FileTravel"
+        },
+        {
+            "type": "java",
+            "name": "hellotxt",
+            "request": "launch",
+            "mainClass": "hellotxt"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
