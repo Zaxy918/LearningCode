@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profiles version="20">
+    <profile kind="CodeFormatterProfile" name="CustomJavaFormat" version="20">
+        <setting id="org.eclipse.jdt.core.formatter.lineSplit" value="999" />
+        <setting id="org.eclipse.jdt.core.formatter.comment.line_length" value="999" />
+        <setting id="org.eclipse.jdt.core.formatter.max_line_length" value="999" />
+
+        <!-- Key setting: Disable block comment formatting to preserve original multi-line format -->
+        <setting id="org.eclipse.jdt.core.formatter.comment.format_block_comments" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.comment.format_line_comments" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.comment.format_header" value="false" />
+
+        <!-- Preserve blank lines and line breaks in comments -->
+        <setting id="org.eclipse.jdt.core.formatter.comment.clear_blank_lines_in_block_comment"
+            value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.comment.new_lines_at_block_boundaries"
+            value="true" />
+        <setting
+            id="org.eclipse.jdt.core.formatter.comment.preserve_white_space_between_code_and_line_comments"
+            value="true" />
+
+        <!-- Disable Javadoc comment formatting (if needed) -->
+        <setting id="org.eclipse.jdt.core.formatter.comment.format_javadoc_comments" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.comment.clear_blank_lines_in_javadoc_comment"
+            value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.comment.new_lines_at_javadoc_boundaries"
+            value="true" />
+    </profile>
+</profiles>
