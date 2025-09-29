@@ -3,11 +3,11 @@ package dep;
 public class Admin extends User {
     private static final int MAX_BORROWED_BOOKS = 5;
     private int borrowedBooks;
-    public static final boolean isAdmin = true;
 
     public Admin(String name, String id, String passWord) {
         super(name, id, passWord);
         this.borrowedBooks = 0;
+        this.isAdmin = true;
     }
 
     public void addBook(Book book) {

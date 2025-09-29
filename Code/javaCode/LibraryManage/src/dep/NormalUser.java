@@ -3,11 +3,11 @@ package dep;
 public class NormalUser extends User {
     private static final int MAX_BORROWED_BOOKS = 3;
     private int borrowedBooks;
-    public static final boolean isAdmin = false;
 
     public NormalUser(String name, String id, String passWord) {
         super(name, id, passWord);
         this.borrowedBooks = 0;
+        this.isAdmin = false;
     }
 
     @Override

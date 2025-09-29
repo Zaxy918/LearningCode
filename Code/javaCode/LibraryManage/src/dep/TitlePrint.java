@@ -34,6 +34,7 @@ public class TitlePrint {
         System.out.println("3. List Books");
         System.out.println("4. Search Book");
         System.out.println("5. Exit");
+        System.out.println("6. log out");
     }
 
     public static void printAdminMenu() {
@@ -44,5 +45,6 @@ public class TitlePrint {
         System.out.println("5. Borrow Book");
         System.out.println("6. Return Book");
         System.out.println("7. Exit");
+        System.out.println("8. log out");
     }
 }

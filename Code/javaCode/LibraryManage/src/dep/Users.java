@@ -22,9 +22,18 @@ public class Users {
         return users;
     }
 
-    public static boolean matchUser(String id, String passWord) {
+    public static User getUser(String id, String passWord) {
         for (User user : users) {
             if (user.getId().equals(id) && user.getPassWord().equals(passWord)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    public static boolean userExists(String id) {
+        for (User user : users) {
+            if (user.getId().equals(id)) {
                 return true;
             }
         }

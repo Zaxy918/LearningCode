@@ -4,6 +4,7 @@ public abstract class User {
     private String name;
     private String id;
     private String passWord;
+    public boolean isAdmin;
 
     public User(String name, String id, String passWord) {
         this.name = name;
