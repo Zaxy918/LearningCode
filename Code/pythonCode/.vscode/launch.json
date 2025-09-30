@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: 当前文件",
+            "name": "Python: Current file",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
@@ -15,7 +15,7 @@
             "args": []
         },
         {
-            "name": "Python: 当前文件 (带参数)",
+            "name": "Python: Current file (with arguments)",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "name": "Python: 指定文件",
+            "name": "Python: Specify file",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/hello.py",
@@ -37,7 +37,7 @@
             "args": []
         },
         {
-            "name": "Python: 模块调试",
+            "name": "Python: Module Debugging",
             "type": "debugpy",
             "request": "launch",
             "module": "mymodule",
@@ -47,7 +47,7 @@
             "args": []
         },
         {
-            "name": "Python: 附加到进程",
+            "name": "Python: Attach to Process",
             "type": "debugpy",
             "request": "attach",
             "connect": {
@@ -85,7 +85,7 @@
             "justMyCode": true
         },
         {
-            "name": "Python: 测试文件",
+            "name": "Python: Unittest",
             "type": "debugpy",
             "request": "launch",
             "module": "pytest",
@@ -100,7 +100,7 @@
     "inputs": [
         {
             "id": "programArgs",
-            "description": "程序参数",
+            "description": "Program arguments",
             "default": "",
             "type": "promptString"
         }
