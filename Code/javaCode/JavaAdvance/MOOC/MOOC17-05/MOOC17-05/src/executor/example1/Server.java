@@ -14,13 +14,13 @@ public class Server {
 
 	public Server() {
 		executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
-		//executor=(ThreadPoolExecutor)Executors.newFixedThreadPool(5);
+		//executor=(ThreadPoolExecutor) Executors.newFixedThreadPool(5);
 	}
 
 	//向线程池提交任务
 	public void submitTask(Task task) {
 		System.out.printf("Server: A new task has arrived\n");
-		executor.execute(task); //???  ??????
+		executor.execute(task);
 
 		System.out.printf("Server: Pool Size: %d\n", executor.getPoolSize());
 		System.out.printf("Server: Active Count: %d\n", executor.getActiveCount());
