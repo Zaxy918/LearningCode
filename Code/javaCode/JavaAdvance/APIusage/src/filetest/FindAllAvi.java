@@ -15,8 +15,8 @@ public class FindAllAvi {
 
     public static void findAllAvi(ArrayList<String> avis, File rootFile) {
         if (rootFile.isFile()) {
-            if (rootFile.getName().endsWith(".java")) {
-                avis.add(rootFile.getName());
+            if (rootFile.getName().endsWith("docker")) {
+                avis.add(rootFile.getAbsolutePath());
                 return;
             }
             return;

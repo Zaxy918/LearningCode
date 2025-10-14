@@ -1,0 +1,19 @@
+/* span {
+    color: gray;
+    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.1);
+    color: #000000;
+} */
+
+/* .cls {
+    color: #ff0000;
+} */
+
+#time {
+    color: #b2b2b2;
+}
+
+a {
+    /* Remove the line under the link */
+    text-decoration: none;
+}

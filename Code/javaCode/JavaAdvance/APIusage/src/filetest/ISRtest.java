@@ -13,4 +13,8 @@ public class ISRtest {
         }
         bw.close();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f5a3438eb63a6c40df02d5836987c07a5a558a25
