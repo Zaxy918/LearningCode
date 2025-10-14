@@ -2,7 +2,6 @@ package intenet2;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.InetAddress;
 
 public class TestReceive {
     public static void main(String[] args) throws Exception {

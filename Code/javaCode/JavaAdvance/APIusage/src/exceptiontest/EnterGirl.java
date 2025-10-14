@@ -1,6 +1,5 @@
 package exceptiontest;
 
-import java.text.ParseException;
 import java.util.Scanner;
 
 public class EnterGirl {
