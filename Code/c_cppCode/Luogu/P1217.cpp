@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 bool isPrime(int n) {
+    if (n < 2)
+        return false;
     if (n == 2)
         return true;
     for (int i = 2; i <= sqrt(n); i++) {
@@ -10,6 +12,9 @@ bool isPrime(int n) {
     }
     return true;
 }
+/*
+ * Very nice way to judge palindrome.
+ */
 bool isPalindrome(int n) {
     int reverse = 0;
     int origin = n;
@@ -23,7 +28,7 @@ int main() {
     int a, b;
     cin >> a >> b;
     for (int i = a % 2 == 0 ? a + 1 : a; i <= b; i += 2) {
-        if (isPalindrome(i) && isPrime(i))
+        if (isPalindrome(i) && isPrime(i)) // Judge the palindrome first.
             cout << i << endl;
     }
 }
