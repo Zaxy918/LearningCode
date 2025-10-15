@@ -1,0 +1,1 @@
+{"name":"Local: P1217","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\P1217.cpp","tests":[{"id":1760459711457,"input":"5 500","output":"5\n7\n11\n101\n131\n151\n181\n191\n313\n353\n373\n383"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\P1217.cpp","group":"local","local":true}

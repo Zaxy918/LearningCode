@@ -17,3 +17,14 @@ a {
     /* Remove the line under the link */
     text-decoration: none;
 }
+
+p {
+    line-height: 1.8;
+    text-indent: 2em;
+}
+
+#content_container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
