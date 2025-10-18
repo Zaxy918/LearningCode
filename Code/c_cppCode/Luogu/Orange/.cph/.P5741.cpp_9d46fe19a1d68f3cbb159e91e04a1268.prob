@@ -1,0 +1,1 @@
+{"name":"Local: P5741","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Orange\\P5741.cpp","tests":[{"id":1760604285988,"input":"3\nfafa 90 90 90\nlxl 95 85 90\nsenpai 100 80 91","output":"fafa lxl\nlxl senpai\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Orange\\P5741.cpp","group":"local","local":true}

@@ -1,20 +1,47 @@
-class obj:
-    def __init__(self, n):
-        self.n = n
-
-    # overriding __eq__ method
-    def __eq__(self, other):
-        return self.n == other.n
-
-    # overriding __hash__ method
-    def __hash__(self):
-        return hash(self.n)
+import sys
 
 
-o1 = obj(1)
-o2 = obj(1)
-o3 = obj(1)
-o4 = o1
-# initializing a set with objects
-s = {o1, o2, o3, o4}
-print(len(s))
+def build_matrix(n: int) -> list[list[int]]:
+	return [[i * n + j + 1 for j in range(n)] for i in range(n)]
+
+
+def rotate_submatrix(matrix: list[list[int]], x: int, y: int, r: int, clockwise: bool) -> None:
+	size = 2 * r + 1
+	top = x - r - 1
+	left = y - r - 1
+	sub = [row[left : left + size] for row in matrix[top : top + size]]
+	if clockwise:
+		rotated = [[sub[size - 1 - j][i] for j in range(size)] for i in range(size)]
+	else:
+		rotated = [[sub[j][size - 1 - i] for j in range(size)] for i in range(size)]
+	for i in range(size):
+		matrix[top + i][left : left + size] = rotated[i]
+
+
+def main() -> None:
+	data = sys.stdin.read().strip().split()
+	if not data:
+		return
+	numbers = list(map(int, data))
+	it = iter(numbers)
+	try:
+		n = next(it)
+		m = next(it)
+	except StopIteration:
+		return
+	matrix = build_matrix(n)
+	for _ in range(m):
+		try:
+			x = next(it)
+			y = next(it)
+			r = next(it)
+			z = next(it)
+		except StopIteration:
+			break
+		rotate_submatrix(matrix, x, y, r, z == 0)
+	for row in matrix:
+		print(" ".join(map(str, row)))
+
+
+if __name__ == "__main__":
+	main()
