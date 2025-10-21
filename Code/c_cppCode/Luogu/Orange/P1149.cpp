@@ -5,8 +5,8 @@ using namespace std;
 const int NUM_STICKS[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
 
 int n;
-int abc[3];
 int cnt;
+int stks[8888];
 
 int getSticks(int num) {
     int stks = 0;
@@ -15,13 +15,16 @@ int getSticks(int num) {
     return stks;
 }
 
-void dfs(int d, int sticks) {
-    if (d == 3) {
-        if (sticks == n && abc[0] + abc[1] == abc[2]) cnt++;
-    }
-    int num = 0;
-}
 int main() {
     cin >> n;
+    for (int i = 0; i <= 4000; i++) {
+        stks[i] = getSticks(i);
+    }
+    for (int i = 0; i < 2000; i++) {
+        for (int j = 0; j < 2000; j++) {
+            if (stks[i] + stks[j] + stks[i + j] == n - 4) cnt++;
+        }
+    }
+    cout << cnt;
     return 0;
 }
