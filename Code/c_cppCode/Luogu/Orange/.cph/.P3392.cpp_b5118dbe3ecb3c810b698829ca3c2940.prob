@@ -1,0 +1,1 @@
+{"name":"Local: P3392","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Orange\\P3392.cpp","tests":[{"id":1761031542352,"input":"4 5\nWRWRW\nBWRWB\nWRWRW\nRWBWR","output":"11"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Orange\\P3392.cpp","group":"local","local":true}
