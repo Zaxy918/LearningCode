@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-const int MAX_N = 1e5;
+const int MAX_N = 1e5 + 1;
 const int MAX_A = 5 * 1e3 + 1;
 const int MOD = 1e9 + 7;
 

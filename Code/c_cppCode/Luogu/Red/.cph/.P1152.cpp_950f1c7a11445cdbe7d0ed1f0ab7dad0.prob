@@ -1,0 +1,1 @@
+{"name":"Local: P1152","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Red\\P1152.cpp","tests":[{"id":1761331176659,"input":"4 1 4 2 3\n","output":"Jolly\n"},{"id":1761331187477,"input":"5 1 4 2 -1 6","output":"Not jolly"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Red\\P1152.cpp","group":"local","local":true}
