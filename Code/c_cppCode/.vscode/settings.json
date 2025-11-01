@@ -54,6 +54,18 @@
         "streambuf": "cpp",
         "text_encoding": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "forward_list": "cpp",
+        "flat_map": "cpp",
+        "generator": "cpp",
+        "chrono": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp",
+        "flat_set": "cpp",
+        "stack": "cpp",
+        "stacktrace": "cpp",
+        "thread": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp"
     }
 }

@@ -1,0 +1,1 @@
+{"name":"Local: P4913","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Orange\\P4913.cpp","tests":[{"id":1761920189934,"input":"7\n2 7\n3 6\n4 5\n0 0\n0 0\n0 0\n0 0","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Orange\\P4913.cpp","group":"local","local":true}

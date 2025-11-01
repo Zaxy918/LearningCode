@@ -1,0 +1,1 @@
+{"name":"Local: P1160","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Yellow\\P1160.cpp","tests":[{"id":1761835834580,"input":"4\n1 0\n2 1\n1 0\n2\n3\n3","output":"2 4 1 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Yellow\\P1160.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: P1825","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Yellow\\P1825.cpp","tests":[{"id":1761827083222,"input":"5 6\n###=##\n#.W.##\n#.####\n#.@W##\n######\n","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Yellow\\P1825.cpp","group":"local","local":true}
