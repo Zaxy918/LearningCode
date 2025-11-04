@@ -12,7 +12,7 @@ long long dis[MAX_N];
 bool reach;
 int pre[MAX_N];
 struct Node {
-    int id;
+    int u;
     long long w;
 };
 Node heap[MAX_N];
@@ -44,11 +44,11 @@ bool cmp(Node a, Node b) {
 
 //* Floating
 void heapify(Node node) {
-    int cur = idx[node.id]; // Start floating from cur
+    int cur = idx[node.u]; // Start floating from cur
     int parent = (cur - 1) / 2;
     while (cur > 0 /* Make sure cur is exist */ && cmp(heap[parent], heap[cur])) {
         swap(heap[parent], heap[cur]);
-        swap(idx[heap[parent].id], idx[heap[cur].id]);
+        swap(idx[heap[parent].u], idx[heap[cur].u]);
         cur = parent;
         parent = (cur - 1) / 2;
     }
@@ -56,7 +56,7 @@ void heapify(Node node) {
 
 void insert(Node node) {
     heap[heapSize] = node; // Insert is into the end of heap
-    idx[heap[heapSize].id] = heapSize;
+    idx[heap[heapSize].u] = heapSize;
     heapSize++;
     heapify(node);
 }
@@ -66,14 +66,14 @@ Node pop() {
     Node ret = heap[0];
     int cur = 0; // Start from the top
     heap[0] = heap[--heapSize];
-    idx[heap[0].id] = 0;
-    idx[ret.id] = -2; // The top is deleted from heap, assumming it -2
+    idx[heap[0].u] = 0;
+    idx[ret.u] = -2; // The top is deleted from heap, assumming it -2
     int left = cur * 2 + 1;
     while (left < heapSize) {
         int best = left + 1 < heapSize ? (cmp(heap[left], heap[left + 1]) ? (cmp(heap[left + 1], heap[cur]) ? cur : left + 1) : (cmp(heap[cur], heap[left]) ? left : cur)) : (cmp(heap[cur], heap[left]) ? left : cur);
         if (best == cur) break;
         swap(heap[best], heap[cur]);
-        swap(idx[heap[best].id], idx[heap[cur].id]);
+        swap(idx[heap[best].u], idx[heap[cur].u]);
         cur = best;
         left = cur * 2 + 1;
     }
@@ -90,7 +90,7 @@ void Dijkstra() {
     insert({1, 0});
     while (heapSize) {
         Node cur = pop();
-        int u = cur.id;
+        int u = cur.u;
         if (u == n) {
             reach = true; // Reach to the end
             return;
