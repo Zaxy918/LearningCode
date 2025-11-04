@@ -1,0 +1,1 @@
+{"name":"Local: P2656","url":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Green\\P2656.cpp","tests":[{"id":1762251014455,"input":"3 3\n1 2 4 0.5\n1 3 7 0.1\n2 3 4 0.6\n1","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LearningCode\\Code\\c_cppCode\\Luogu\\Green\\P2656.cpp","group":"local","local":true}
