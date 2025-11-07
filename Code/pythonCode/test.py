@@ -1,47 +1,35 @@
-import sys
+import os
+from datetime import datetime, date, time, timedelta
+import calendar
+import re
 
 
-def build_matrix(n: int) -> list[list[int]]:
-	return [[i * n + j + 1 for j in range(n)] for i in range(n)]
+def enum_jpg(dir):
+    for file in os.listdir(dir):
+        if file.endswith(".jpg"):
+            os.rename(file, "a.jpg")
 
 
-def rotate_submatrix(matrix: list[list[int]], x: int, y: int, r: int, clockwise: bool) -> None:
-	size = 2 * r + 1
-	top = x - r - 1
-	left = y - r - 1
-	sub = [row[left : left + size] for row in matrix[top : top + size]]
-	if clockwise:
-		rotated = [[sub[size - 1 - j][i] for j in range(size)] for i in range(size)]
-	else:
-		rotated = [[sub[j][size - 1 - i] for j in range(size)] for i in range(size)]
-	for i in range(size):
-		matrix[top + i][left : left + size] = rotated[i]
+def is_valid_id(id_str: str):
+    pattern = re.compile(r"\d{15}|\d{17}[\dxX]")
+    match = pattern.fullmatch(id_str)
+    if match:
+        try:
+            birth = date(year=int(id_str[6:10]),
+                         month=int(id_str[10:12]),
+                         day=int(id_str[12:14]))
+        except:
+            print("No")
+        else:
+            print(birth)
+    else:
+        print("No")
 
 
-def main() -> None:
-	data = sys.stdin.read().strip().split()
-	if not data:
-		return
-	numbers = list(map(int, data))
-	it = iter(numbers)
-	try:
-		n = next(it)
-		m = next(it)
-	except StopIteration:
-		return
-	matrix = build_matrix(n)
-	for _ in range(m):
-		try:
-			x = next(it)
-			y = next(it)
-			r = next(it)
-			z = next(it)
-		except StopIteration:
-			break
-		rotate_submatrix(matrix, x, y, r, z == 0)
-	for row in matrix:
-		print(" ".join(map(str, row)))
+def day_of_leapy(year, month, day):
+    if calendar.isleap(year):
+        return date(year, month, day).timetuple().tm_yday
 
 
-if __name__ == "__main__":
-	main()
+is_valid_id("510723200609183193")
+print(day_of_leapy(2020, 9, 9))

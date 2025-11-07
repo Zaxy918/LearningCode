@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <table>
+            <input type="button" value="Greet" @click="hello">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Location</th>
+            </thead>
+            <tbody>
+                <tr v-for="(item, index) in peoples" :key="item.name">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.age }}</td>
+                    <td>{{ item.gender === 1 ? 'Male' : 'Female' }}</td>
+                    <td>{{ item.location }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="module">
+        import { createApp } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        createApp({
+            data() {
+                return {
+                    peoples: [
+                        {
+                            "name": "John",
+                            "age": 30,
+                            "gender": 1,
+                            "location": "USA"
+                        },
+                        {
+                            "name": "Alice",
+                            "age": 25,
+                            "gender": 2,
+                            "location": "UK"
+                        },
+                        {
+                            "name": "Bob",
+                            "age": 28,
+                            "gender": 1,
+                            "location": "USA"
+                        },
+                        {
+                            "name": "Eve",
+                            "age": 22,
+                            "gender": 2,
+                            "location": "UK"
+                        }
+                    ]
+                }
+            },
+            methods: {
+                hello() {
+                    alert(`Hello from ${this.peoples[0].location}`);
+                }
+            }
+        }).mount("#app")
+    </script>
+</body>
+
+</html>

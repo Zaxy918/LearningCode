@@ -1,0 +1,113 @@
+2024-11-06 09:12:31 INFO User login success: userId=101
+2024-11-06 09:45:10 WARN Disk space low: 5% remaining
+2024-11-06 10:03:55 ERROR Database connection timeout
+2024-11-06 10:15:22 INFO User logout: userId=101
+2024-11-06 11:07:12 INFO File uploaded: fileId=88321
+2024-11-06 11:30:41 ERROR Invalid token: userId=233
+2024-11-06 12:02:19 INFO User login success: userId=202
+2024-11-06 12:20:03 WARN CPU usage high: 92%
+2024-11-06 12:45:55 ERROR Failed to write log file
+2024-11-06 13:11:42 ERROR Invalid password: userId=456
+2024-11-06 13:30:09 INFO File deleted: fileId=88322
+2024-11-06 14:05:34 INFO User login success: userId=305
+2024-11-06 14:55:18 WARN Memory usage high: 87%
+2024-11-06 15:14:22 INFO Scheduled task executed: taskId=12
+2024-11-06 15:50:02 ERROR Null pointer at ServiceHandler.java:87
+2024-11-06 16:21:38 INFO User logout: userId=202
+2024-11-06 17:03:16 WARN Network latency detected: 650ms
+2024-11-06 17:45:27 INFO Cache cleared successfully
+2024-11-06 18:10:59 ERROR File not found: config.yml
+2024-11-06 19:00:11 INFO System shutdown initiated
+2024-11-06 08:01:11 INFO System startup completed
+2024-11-06 08:05:22 INFO User login success: userId=1001
+2024-11-06 08:07:45 WARN Disk space low: 12% remaining
+2024-11-06 08:10:33 DEBUG Loading configuration from config.yml
+2024-11-06 08:15:52 INFO Scheduled task executed: taskId=1
+2024-11-06 08:22:18 ERROR Database connection timeout
+2024-11-06 08:30:41 INFO User login success: userId=1002
+2024-11-06 08:33:17 WARN CPU usage high: 91%
+2024-11-06 08:40:56 INFO Cache cleared successfully
+2024-11-06 08:45:13 ERROR Invalid password: userId=1003
+2024-11-06 08:51:09 INFO File uploaded: fileId=55001
+2024-11-06 09:00:25 INFO User logout: userId=1001
+2024-11-06 09:05:44 WARN Memory usage high: 86%
+2024-11-06 09:11:12 INFO User login success: userId=1004
+2024-11-06 09:15:30 ERROR File not found: settings.json
+2024-11-06 09:21:18 DEBUG Refreshing access token
+2024-11-06 09:33:55 INFO File deleted: fileId=55001
+2024-11-06 09:40:28 WARN Network latency detected: 640ms
+2024-11-06 09:45:37 INFO Scheduled task executed: taskId=2
+2024-11-06 09:51:50 ERROR Null pointer at UserService.java:112
+2024-11-06 10:01:05 INFO User login success: userId=1005
+2024-11-06 10:05:14 INFO File uploaded: fileId=55002
+2024-11-06 10:11:03 WARN CPU usage high: 89%
+2024-11-06 10:18:29 DEBUG Reloading translation cache
+2024-11-06 10:23:44 ERROR Invalid token: userId=1006
+2024-11-06 10:31:12 INFO User logout: userId=1004
+2024-11-06 10:38:56 WARN Disk write speed slow: 45MB/s
+2024-11-06 10:45:22 INFO Backup completed: size=1.2GB
+2024-11-06 10:50:13 ERROR Failed to write log file
+2024-11-06 10:57:03 DEBUG Connection pool resized: size=20
+2024-11-06 11:02:49 INFO User login success: userId=1007
+2024-11-06 11:10:37 INFO Scheduled task executed: taskId=3
+2024-11-06 11:12:41 WARN High thread count: 520 active
+2024-11-06 11:20:52 INFO File uploaded: fileId=55003
+2024-11-06 11:25:30 ERROR Service unavailable: PaymentService
+2024-11-06 11:33:18 DEBUG Fetching remote config
+2024-11-06 11:40:59 INFO User logout: userId=1005
+2024-11-06 11:45:47 WARN Memory usage high: 90%
+2024-11-06 11:51:19 ERROR Array index out of bounds at TaskExecutor.java:56
+2024-11-06 12:00:03 INFO User login success: userId=1008
+2024-11-06 12:05:15 INFO File deleted: fileId=55003
+2024-11-06 12:11:22 WARN Network latency detected: 720ms
+2024-11-06 12:18:08 DEBUG Cleaning old sessions
+2024-11-06 12:24:51 ERROR Invalid password: userId=1009
+2024-11-06 12:30:33 INFO Scheduled task executed: taskId=4
+2024-11-06 12:35:11 INFO Cache cleared successfully
+2024-11-06 12:42:57 WARN CPU usage high: 94%
+2024-11-06 12:50:48 ERROR Database deadlock detected
+2024-11-06 12:55:31 DEBUG Updating user stats cache
+2024-11-06 13:02:06 INFO User login success: userId=1010
+2024-11-06 13:10:33 INFO File uploaded: fileId=55004
+2024-11-06 13:15:21 WARN Disk space low: 7% remaining
+2024-11-06 13:22:55 ERROR Null pointer at MailSender.java:77
+2024-11-06 13:30:12 DEBUG Reading feature flags
+2024-11-06 13:35:40 INFO User logout: userId=1007
+2024-11-06 13:41:58 WARN Memory usage high: 88%
+2024-11-06 13:50:02 ERROR File not found: app.properties
+2024-11-06 13:55:47 INFO Scheduled task executed: taskId=5
+2024-11-06 14:01:16 INFO User login success: userId=1011
+2024-11-06 14:10:37 INFO File deleted: fileId=55004
+2024-11-06 14:15:23 WARN High thread count: 612 active
+2024-11-06 14:22:54 DEBUG Syncing user cache
+2024-11-06 14:30:09 ERROR Invalid token: userId=1012
+2024-11-06 14:36:47 INFO Cache cleared successfully
+2024-11-06 14:41:33 WARN CPU usage high: 93%
+2024-11-06 14:50:28 ERROR Service unavailable: AuthService
+2024-11-06 14:58:55 DEBUG Resetting session manager
+2024-11-06 15:04:22 INFO User login success: userId=1013
+2024-11-06 15:10:17 INFO File uploaded: fileId=55005
+2024-11-06 15:18:50 WARN Disk write speed slow: 38MB/s
+2024-11-06 15:25:45 ERROR Invalid password: userId=1014
+2024-11-06 15:33:12 DEBUG Refreshing API keys
+2024-11-06 15:41:29 INFO User logout: userId=1010
+2024-11-06 15:48:57 WARN Network latency detected: 810ms
+2024-11-06 15:55:33 ERROR Array index out of bounds at ReportService.java:203
+2024-11-06 16:02:01 INFO Scheduled task executed: taskId=6
+2024-11-06 16:10:44 INFO Cache cleared successfully
+2024-11-06 16:15:30 WARN CPU usage high: 95%
+2024-11-06 16:22:07 ERROR File not found: secrets.env
+2024-11-06 16:30:55 DEBUG Reloading websocket connection
+2024-11-06 16:37:19 INFO User login success: userId=1015
+2024-11-06 16:45:42 INFO File uploaded: fileId=55006
+2024-11-06 16:53:01 WARN Memory usage high: 92%
+2024-11-06 17:01:16 ERROR Database connection timeout
+2024-11-06 17:09:38 DEBUG Cleaning old tokens
+2024-11-06 17:15:04 INFO User logout: userId=1013
+2024-11-06 17:21:55 WARN High thread count: 703 active
+2024-11-06 17:30:22 ERROR Failed to write log file
+2024-11-06 17:37:13 DEBUG Updating login stats
+2024-11-06 17:45:59 INFO System shutdown initiated
+2024-11-06 17:50:41 INFO Backup completed: size=1.5GB
+2024-11-06 17:58:28 WARN Disk space low: 3% remaining
+2024-11-06 18:05:00 ERROR Null pointer at Scheduler.java:144
