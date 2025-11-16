@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zaxyliu.mapper.StudentMapper">
+    <insert id="add">
+        insert into student (name, no, gender, phone, id_card, is_college, address, degree, graduation_date,
+                             clazz_id, create_time, update_time)
+        values (#{name}, #{no}, #{gender}, #{phone}, #{idCard}, #{isCollege}, #{address}, #{degree}, #{graduationDate},
+                #{clazzId}, #{createTime}, #{updateTime})
+    </insert>
+    <update id="alter">
+        update student
+        set name = #{name},
+        no = #{no},
+        phone = #{phone},
+        gender = #{gender},
+        degree = #{degree},
+        <if test="idCard != null and idCard != ''">
+            id_card = #{idCard},
+        </if>
+        <if test="isCollege != null">
+            is_college = #{isCollege},
+        </if>
+        <if test="address != null">
+            address = #{address},
+        </if>
+        <if test="graduationDate != null">
+            graduation_date = #{graduationDate},
+        </if>
+        violation_count = #{violationCount},
+        violation_score = #{violationScore},
+        clazz_id = #{clazzId}
+        where id = #{id}
+    </update>
+    <delete id="deleteByIds">
+        delete from student where id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <select id="queryStudent" resultType="com.zaxyliu.pojo.Student">
+        select s.id,
+        s.name,
+        no,
+        gender,
+        phone,
+        id_card idCard,
+        is_college isCollege,
+        address,
+        degree,
+        graduation_date graduationDate,
+        clazz_id clazzId,
+        violation_count violationCount,
+        violation_score violationScore,
+        s.create_time createTime,
+        s.update_time updateTime,
+        c.name clazzName
+        from student s left join clazz c on s.clazz_id = c.id
+        <where>
+            <if test="name != null and name != ''">
+                name = #{name}
+            </if>
+            <if test="degree != null">
+                and degree = #{degree}
+            </if>
+            <if test="clazzId != null">
+                and clazz_id = #{clazzId}
+            </if>
+        </where>
+    </select>
+    <select id="queryById" resultType="com.zaxyliu.pojo.Student">
+        select s.id,
+               s.name,
+               no,
+               phone,
+               gender,
+               phone,
+               gender,
+               degree,
+               id_card         idCard,
+               is_college      isCollege,
+               address,
+               graduation_date graduationDate,
+               violation_count violationCount,
+               violation_score violationScore,
+               clazz_id        clazzId,
+               s.create_time   createTime,
+               s.update_time   updateTime,
+               c.name          clazzName
+        from student s
+                 left join clazz c on s.clazz_id = c.id
+        where s.id = #{id}
+    </select>
+    <select id="countStudentDegreeData" resultType="java.util.Map">
+        select (case
+                    when degree = 1 then '初中'
+                    when degree = 2 then '高中'
+                    when degree = 3 then '大专'
+                    when degree = 4 then '本科'
+                    when degree = 5 then '硕士'
+                    when degree = 6 then '博士' end) name,
+               count(*)                              value
+        from student
+        group by degree
+    </select>
+    <select id="countStudentClazz" resultType="java.util.Map">
+        select c.name clazz, count(*) num
+        from student s
+                 join clazz c on s.clazz_id = c.id
+        group by c.id;
+    </select>
+</mapper>

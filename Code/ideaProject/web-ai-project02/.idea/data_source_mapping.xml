@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d76c1e5e-aeff-42d7-9311-e96b55d489be/console.sql" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d76c1e5e-aeff-42d7-9311-e96b55d489be/console_1.sql" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d76c1e5e-aeff-42d7-9311-e96b55d489be/console_2.sql" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d76c1e5e-aeff-42d7-9311-e96b55d489be/console_3.sql" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/d76c1e5e-aeff-42d7-9311-e96b55d489be/console_4.sql" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$PROJECT_DIR$/talias-web-management/src/main/java/com/zaxyliu/mapper/EmpMapper.java" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$PROJECT_DIR$/talias-web-management/src/main/java/com/zaxyliu/mapper/OperateLogMapper.java" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$PROJECT_DIR$/talias-web-management/src/main/resources/com/zaxyliu/mapper/ClazzMapper.xml" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$PROJECT_DIR$/talias-web-management/src/main/resources/com/zaxyliu/mapper/EmpMapper.xml" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+    <file url="file://$PROJECT_DIR$/talias-web-management/src/main/resources/com/zaxyliu/mapper/StudentMapper.xml" value="d76c1e5e-aeff-42d7-9311-e96b55d489be" />
+  </component>
+</project>
