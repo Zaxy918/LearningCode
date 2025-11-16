@@ -1,10 +1,10 @@
 <script setup>
-  import { ref } from 'vue';
-  const message = ref('Hello Vue 3 with Script Setup!');
+  import ApiDemo from './views/ApiDemo.vue'
+  import EmpList from "./views/Emplist.vue";
 </script>
 
 <template>
-  <h1>{{ message }}</h1>
+  <EmpList></EmpList>
 </template>
 
 <style scoped>
