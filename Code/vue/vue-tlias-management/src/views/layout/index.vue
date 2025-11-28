@@ -1,5 +1,35 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+import { ElMessageBox } from 'element-plus';
+import router from '@/router';
 
+const loginUser = ref('');
+
+const logout = () => {
+  ElMessageBox.confirm(
+    'Are you sure you want to logout?',
+    'Logout Confirmation',
+    {
+      confirmButtonText: 'Logout',
+      cancelButtonText: 'Cancel',
+      type: 'warning',
+    }
+  ).then(() => {
+    // Clear user data from localStorage
+    localStorage.removeItem('loginUser');
+    // Redirect to login page
+    router.push('/login');
+  }).catch(() => {
+    // User cancelled logout
+  });
+};
+
+onMounted(() => {
+  const user = JSON.parse(localStorage.getItem('loginUser'));
+  if (user && user.username) {
+    loginUser.value = user.username;
+  }
+});
 </script>
 
 <template>
@@ -14,10 +44,10 @@
               <EditPen />
             </el-icon> Change Password &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
           </a>
-          <a href="">
+          <a href="javascript:void(0)" @click="logout">
             <el-icon>
               <SwitchButton />
-            </el-icon> Logout
+            </el-icon> Logout [{{ loginUser }}]
           </a>
         </span>
       </el-header>

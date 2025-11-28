@@ -1,26 +1,47 @@
 <script setup>
-  import { ref } from 'vue'
-  
-  let loginForm = ref({username:'', password:''})
-  
+import { ref } from 'vue'
+import { loginApi } from '@/api/login';
+import { useRouter } from 'vue-router';
+import { ElMessage } from 'element-plus';
+
+let loginForm = ref({ username: '', password: '' })
+const router = useRouter();
+
+const login = async () => {
+  const res = await loginApi(loginForm.value);
+  if (res.code) {
+    // Store token in localStorage
+    localStorage.setItem('loginUser', JSON.stringify(res.data));
+    // Redirect to home page
+    router.push('/');
+  } else {
+    ElMessage.error(res.msg);
+  }
+}
+
+const clear = () => {
+  loginForm.value.username = '';
+  loginForm.value.password = '';
+};
+
 </script>
 
 <template>
   <div id="container">
     <div class="login-form">
       <el-form label-width="80px">
-        <p class="title">Tlias智能学习辅助系统</p>
-        <el-form-item label="用户名" prop="username">
-          <el-input v-model="loginForm.username" placeholder="请输入用户名"></el-input>
+        <p class="title">Tlias Management</p>
+        <el-form-item label="Username" prop="username">
+          <el-input v-model="loginForm.username" placeholder="Enter your username"></el-input>
         </el-form-item>
 
-        <el-form-item label="密码" prop="password">
-          <el-input type="password" v-model="loginForm.password" placeholder="请输入密码"></el-input>
+        <el-form-item label="Password" prop="password">
+          <el-input type="password" v-model="loginForm.password" placeholder="Enter your password"></el-input>
         </el-form-item>
 
         <el-form-item>
-          <el-button class="button" type="primary" @click="">登 录</el-button>
-          <el-button class="button" type="info" @click="">重 置</el-button>
+          <el-button class="button" type="primary" @click="login">Log In</el-button>
+          <el-button class="button" type="info" @click="clear">Clear</el-button>
         </el-form-item>
       </el-form>
     </div>
