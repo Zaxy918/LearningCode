@@ -38,4 +38,10 @@ public class TimeClass {
         gc.add(Calendar.DATE, -1);// roll() do not match this.
         return gc.get(Calendar.DAY_OF_MONTH);
     }
+
+    public static int LastdayOfMonth2(int year, int month) {
+        LocalDate date = LocalDate.of(year, month, 1);
+        date = date.minusDays(1);
+        return date.getDayOfMonth();
+    }
 }

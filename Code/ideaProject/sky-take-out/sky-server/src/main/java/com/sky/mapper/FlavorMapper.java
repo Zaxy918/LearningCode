@@ -1,10 +1,7 @@
 package com.sky.mapper;
 
-import com.sky.annotation.AutoFill;
 import com.sky.entity.DishFlavor;
-import com.sky.enumeration.OperationType;
 import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -22,4 +19,6 @@ public interface FlavorMapper {
     List<DishFlavor> queryByDishId(Long id);
 
     void deleteBatchByDishIds(List<Long> dishIds);
+
+    List<DishFlavor> queryByDishIds(List<Long> dishIds);
 }

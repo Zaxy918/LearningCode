@@ -22,18 +22,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
 public class DishServiceImpl implements DishService {
 
     @Autowired
-    DishMapper dishMapper;
+    private DishMapper dishMapper;
     @Autowired
-    FlavorMapper flavorMapper;
+    private FlavorMapper flavorMapper;
     @Autowired
-    SetmealDishMapper setmealDishMapper;
+    private SetmealDishMapper setmealDishMapper;
+    @Autowired
+    private SetmealMapper setmealMapper;
 
     @Override
     @Transactional(rollbackFor = Exception.class)
@@ -99,6 +104,62 @@ public class DishServiceImpl implements DishService {
             });
             flavorMapper.insertBach(flavors);
         }
+    }
+
+    /**
+     * 条件查询菜品和口味
+     *
+     * @param dish
+     * @return
+     */
+    public List<DishVO> listWithFlavor(Dish dish) {
+        List<Dish> dishList = dishMapper.list(dish);
+
+
+//        long start = System.currentTimeMillis();
+        // 通过一次性查询以及map映射减少数据库访问次数
+        List<Long> dishIds = dishList.stream().mapToLong(Dish::getId).boxed().collect(Collectors.toList());
+        Map<Long, List<DishFlavor>> dishFlavors = flavorMapper.queryByDishIds(dishIds).stream().collect(Collectors.groupingBy(DishFlavor::getDishId));
+        List<DishVO> dishVOList = new ArrayList<>();
+        for (Dish d : dishList) {
+            DishVO dishVO = new DishVO();
+            BeanUtils.copyProperties(d, dishVO);
+            dishVO.setFlavors(dishFlavors.get(d.getId()));
+            dishVOList.add(dishVO);
+        }
+//        List<DishVO> dishVOList = new ArrayList<>();
+//        for (Dish d : dishList) {
+//            DishVO dishVO = new DishVO();
+//            BeanUtils.copyProperties(d, dishVO);
+//            List<DishFlavor> flavors = flavorMapper.queryByDishId(d.getId());
+//            dishVO.setFlavors(flavors);
+//            dishVOList.add(dishVO);
+//        }
+//        long end = System.currentTimeMillis();
+//        log.info("listWithFlavor方法总耗时：{}毫秒", (end - start));
+        return dishVOList;
+    }
+
+    @Override
+    public List<Dish> listByCategoriId(Long categoryId) {
+        Dish dish = new Dish();
+        dish.setCategoryId(categoryId);
+        dish.setStatus(StatusConstant.ENABLE);
+        return dishMapper.list(dish);
+    }
+
+    @Override
+    public void updateStatus(Integer status, Long id) {
+        if (status.equals(StatusConstant.DISABLE)) {
+            //停售菜品时，判断是否关联套餐
+            List<Long> setmealIds = setmealDishMapper.querySetmealIdsByDishId(id);
+            if (!setmealIds.isEmpty()) {
+                setmealIds.forEach(setmealId -> {
+                    setmealMapper.updateStatus(status, setmealId);
+                });
+            }
+        }
+        dishMapper.update(Dish.builder().id(id).status(status).build());
     }
 
 }
